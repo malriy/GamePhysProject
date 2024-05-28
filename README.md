@@ -12,6 +12,7 @@ Circle - Projectiles
 
 ### Instructions:
 Objective of the game is to dodge the incoming projectiles while also running from the hunter
+
 ![alt text](image.png)
 * Arrow Keys to move the player
 * Spacebar to Jump
