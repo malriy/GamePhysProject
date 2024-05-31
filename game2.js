@@ -86,7 +86,7 @@ class GameScene extends Phaser.Scene {
             allowGravity: true,
         });
         const genBalls = () => {
-            const ball = gameState.balls.create(config.width, Phaser.Math.Between(0, config.height), 'ballTexture');
+            const ball = gameState.balls.create(config.width + 50, Phaser.Math.Between(0, config.height), 'ballTexture');
             ball.setVelocityX(-200); // Move the ball to the left
             ball.body.onWorldBounds = true;
             ball.body.world.setBoundsCollision(true, false, true, true); // Disable collision with the left side
@@ -200,20 +200,20 @@ class GameScene extends Phaser.Scene {
 
 const config = {
     type: Phaser.AUTO,
-    width: window.innerWidth,
-    height: window.innerHeight,
-    backgroundColor: "#588fed",
+    width: 1200,
+    height: 700,
+    backgroundColor: "#ffffff", // Set the background color to white
     scene: [StartScene, GameScene],
     physics: {
         default: 'arcade',
         arcade: {
-          gravity: {y: 500},
+          gravity: { y: 500 },
           enableBody: true,
         }
     },
     scale: {
-        mode: Phaser.Scale.RESIZE,
-        autoCenter: Phaser.Scale.CENTER_BOTH
+        mode: Phaser.Scale.NONE, // Do not scale the game
+        autoCenter: Phaser.Scale.CENTER_BOTH, // Center the game
     }
 };
 
