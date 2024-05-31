@@ -28,7 +28,7 @@ In-game Screen
 Game Over Screen
 
 ### Link to Video Demo
-[Gameplay Video Link](https://youtu.be/qri7e1ZYvIk)
+[Gameplay Video Link](https://youtu.be/tqRbACMiVt4)
 
 ### Acknowledgements
 * **Wong Chong Pei** (Groupmate)
