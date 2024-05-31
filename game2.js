@@ -190,6 +190,7 @@ class GameScene extends Phaser.Scene {
         // ---------------------Game Over state-------------------------
         else{
             if (Phaser.Input.Keyboard.JustDown(gameState.cursors.space)) {
+                gameState.score = 0;
                 this.scene.restart();
             }
         }
